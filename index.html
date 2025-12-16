@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARKLINE Tattoo - Tatoueur Minimaliste Essonne 91</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>DARKLINE Tattoo</h1>
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Overlay pour le menu -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Menu Modal -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#hero">Accueil</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+        <a href="#localisation">Localisation</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Bienvenue dans mon salon privé de tatouage situé en Essonne</h2>
+            <h3>Ici, je vous accueille, uniquement sur rendez-vous, pour une expérience de tatouage dans un cadre à la fois intimiste et décontracté <br>Chaque projet est unique et personnalisé selon vos envies, tout en arborant ma touche artistique</h3>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Prendre contact</a>
+                <a href="#realisations" class="btn btn-secondary">Voir dernières réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <section id="presentation" class="presentation">
+        <div class="container">
+            <h2>Le Salon</h2>
+            <p class="horaires">Le salon est ouvert du lundi au samedi de 12h à 20h à l'adresse suivante :<br>
+            <strong>78 Rte de Corbeil, 91360 Villemoisson-sur-Orge</strong></p>
+            
+            <div class="salon-photos">
+                <div class="photo-item">
+                    <img src="/assets/images/tatoueur_salon.jpg" alt="Photo du tatoueur">
+                </div>
+                <div class="photo-item">
+                    <img src="/assets/images/espace_salon_1.jpg" alt="Photo du salon 1">
+                </div>
+                <div class="photo-item">
+                    <img src="/assets/images/espace_salon_2.jpg" alt="Photo du salon 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dernières Réalisations -->
+    <section id="realisations" class="realisations">
+        <div class="container">
+            <h2>Dernières Réalisations</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Précédent">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/tattoo/tattoo_1.png" alt="Réalisation 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/tattoo/tattoo_2.png" alt="Réalisation 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/tattoo/tattoo_3.png" alt="Réalisation 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/tattoo/tattoo_4.png" alt="Réalisation 4">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Suivant">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section id="avis" class="avis">
+        <div class="container">
+            <h2>Avis Clients</h2>
+            <div class="avis-grid">
+                <div class="avis-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="avis-text">"Mon premier gros tatouage, 7h de tattoo ! Un travail de qualité, hygiène au top ! Il a su réaliser un dessin selon mes envies et mes idées ! Très contente du résultat ! Encore merci pour ce tattoo"</p>
+                    <p class="avis-author">— Cindy H.</p>
+                </div>
+                <div class="avis-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="avis-text">"Une expérience au top, au-delà de mes attentes. Super à l'écoute, de bons conseils, hyper pro du début à la fin. Le résultat est incroyable, vraiment l'un des tatoueurs les plus talentueux que j'ai rencontrés. Foncez les yeux fermés"</p>
+                    <p class="avis-author">— Samer O.</p>
+                </div>
+                <div class="avis-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="avis-text">"Un excellent tatoueur ! Très à l'écoute, il prend vraiment le temps de comprendre ce que l'on veut. Son souci du détail est impressionnant, chaque trait est précis et soigné. Je recommande les yeux fermés pour celles et ceux qui cherchent un travail de qualité et une vrai création personnalisée !"</p>
+                    <p class="avis-author">— Nicolas M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Pour toute demande de rendez-vous ou d'information, n'hésitez pas à me contacter.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="objet">Objet *</label>
+                    <input type="text" id="objet" name="objet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Localisation -->
+    <section id="localisation" class="localisation">
+        <div class="container">
+            <h2>Localisation</h2>
+            <p>78 Rte de Corbeil, 91360 Villemoisson-sur-Orge</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=78+Rte+de+Corbeil+91360+Villemoisson-sur-Orge" target="_blank" rel="noopener" class="map-container">
+                <img src="/assets/images/location_map.png" alt="Localisation du salon sur Google Maps" class="map-image">
+                <div class="map-overlay">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Cliquez pour ouvrir dans Google Maps</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/darkline_tattoo91/" aria-label="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/p/Darkline-tattoo91-61573245981193/" aria-label="Facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://fr.pinterest.com/darkline_tattoo91/" aria-label="Pinterest" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 DARKLINE Tattoo - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
